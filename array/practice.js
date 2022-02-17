@@ -4,7 +4,7 @@
 const cars = ['Slow', 'Fast']
 let car = cars[1]
 
-//Objects use named indexes to acess its 'members', on the other hand, arrays use numbers.
+//Objects use named indexes to access its 'members', on the other hand, arrays use numbers.
 const nameGenerator = [firstName= 'Guilherme', secondName='Andressa'];
 const carGenerator = ['Carro1', 'Carro2'];
 
