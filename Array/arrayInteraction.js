@@ -8,6 +8,7 @@ function multiplier(value) {
 }
 
 
+
 //the method filter() creates a new array with array elements that attended the criterion
 // function arguments: value, index and array
 
@@ -19,9 +20,10 @@ function numberFilter(value) {
 }
 
 //the method reduce() sums all array elements from left to right
+
 // the method reduceRight()sums all the array elements from right to left.
 //Moreover, reduce can recieve a initial number, like the example: reduce(function, 100)
-// function arguments: total (initial value) value, index and array
+//function arguments: total (initial value) value, index and array
 
 const numbers5 = [2,5];
 const sum = numbers5.reduce(sums, 100)
@@ -40,6 +42,8 @@ function firstCheck (value) {
     return value > 18;
 }
 
+
+
 //some() method check if some array values pass the test
 // function arguments: value, index and array
 
@@ -50,14 +54,24 @@ function secondCheck (value) {
     return value > 18;
 }
 
-
 //indexOf() returns the element array position
 //indexOf () recieves two parameters: indexOf(Item, start)
+//lastIndexOf() returns the last element. 
 // item: Required. The item which must be searched for
 // start: Optional. Where to start the search
 
 const fruits = ["Apple", "Orange", "Apple", "Mango"];
-const locate = fruits.indexOf();
+const locate = fruits.indexOf('Orange');
 
 
 
+/*
+findIndex() returns the FIRST element that passes the test.
+*/
+
+const numbers8 = [4, 9, 16, 25, 29];
+let validate3 = numbers8.findIndex(thirdCheck)
+
+function thirdCheck (value){
+    return value < 18;
+}
